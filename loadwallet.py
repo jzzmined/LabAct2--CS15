@@ -8,7 +8,8 @@ class LoadWallet:
     def top_up(self, top_up_amount):
         if top_up_amount > 0:
             self.start_balance += top_up_amount
-            print(f"Top-up successful. New balance: PHP {self.start_balance:.2f}")
+            print(f"Top-up successful!")
+            print(f"New balance: PHP {self.start_balance:.2f}")
         else:
             print("Invalid top-up amount. Please enter a positive value.")
         
