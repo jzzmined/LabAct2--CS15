@@ -33,7 +33,6 @@ class LoadWallet:
             print(f"Load sent successfully!!")
             print(f"\nNew balance: PHP {self.start_balance:.2f}")
 
-
     #Show Balance
     def show_balance(self):
         print("\n---WALLET INFORMATION---")

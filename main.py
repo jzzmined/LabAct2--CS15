@@ -1,7 +1,9 @@
 from loadwallet import LoadWallet
 
+#MAIN
 def main():
-    owner_name = input("Enter owner name: ")
+    print("\nMabuhay! Mag-load kana!")
+    owner_name = input("\nEnter owner name: ")
     mob_number = input("Enter mobile number: ")
     start_balance = float(input("Enter starting balance: "))
 
