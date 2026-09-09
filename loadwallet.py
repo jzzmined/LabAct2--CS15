@@ -8,7 +8,7 @@ class LoadWallet:
     def top_up(self, top_up_amount):
         if top_up_amount > 0:
             self.start_balance += top_up_amount
-            print(f"Top-up successful!")
+            print(f"\nTop-up successful!")
             print(f"New balance: PHP {self.start_balance:.2f}")
         else:
             print("Invalid top-up amount. Please enter a positive value.")
@@ -17,8 +17,8 @@ class LoadWallet:
     def send_load(self, recipient_number, send_amount):
         if send_amount > 0 and send_amount <= self.start_balance:
             self.start_balance -= send_amount
-            print(f"Load sent successfully!")
-            print(f"\nNew balance: PHP {self.start_balance:.2f}")
+            print(f"\nLoad sent successfully!")
+            print(f"New balance: PHP {self.start_balance:.2f}")
         else:
             print("Invalid send amount. Please enter a positive value within your balance.")
 
@@ -31,8 +31,8 @@ class LoadWallet:
             print("Insufficient balance to cover the send amount and fee.")
         else: 
             self.start_balance -= total_amount
-            print(f"Load sent successfully!!")
-            print(f"\nNew balance: PHP {self.start_balance:.2f}")
+            print(f"\nLoad sent successfully!!")
+            print(f"New balance: PHP {self.start_balance:.2f}")
 
     #Show Balance
     def show_balance(self):
