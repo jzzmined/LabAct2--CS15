@@ -15,7 +15,7 @@ def main():
         print("4.Show Balance")
         print("5.Exit")
 
-        pili_ka = int(input("\nEnter your choice (1-5): "))
+        pili_ka = int(input("\nChoose an option (1-5): "))
 
         if pili_ka == 1:
             top_up_amount = float(input("Enter top-up amount: "))
