@@ -14,8 +14,6 @@ class LoadWallet:
         
     #Send Load
     def send_load(self, recipient_number, send_amount):
-        print(f"Enter recipient number: {recipient_number}")
-        print(f"Enter send amount: {send_amount}")
         if send_amount > 0 and send_amount <= self.start_balance:
             self.start_balance -= send_amount
             print(f"Load sent successfully. New balance: {self.start_balance}")
@@ -37,7 +35,8 @@ class LoadWallet:
 
     #Show Balance
     def show_balance(self):
-        print(f"Owner:: {self.owner_name}")
+        print("\n---WALLET INFORMATION---")
+        print(f"Owner: {self.owner_name}")
         print(f"Mobile Number: {self.mob_number}")
         print(f"Balance: {self.start_balance:.2f}")
 
